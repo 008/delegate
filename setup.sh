@@ -24,8 +24,8 @@ echo "Group=$USER" >> prod.service
 echo "Type=forking" >> prod.service
 echo "PIDFile=/var/spool/delegate-root/act/pid/11111" >> prod.service
 
-echo "ExecStart=/root/pro/start" >> prod.service
-echo "ExecStop=" >> prod.service
+echo "ExecStart=/bin/bash /root/pro/start" >> prod.service
+echo "ExecStop=/bin/bash delegated -P11111 -Fkill" >> prod.service
 
 echo "Restart=always" >> prod.service
 echo "PrivateTmp=true" >> prod.service
