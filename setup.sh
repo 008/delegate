@@ -40,3 +40,7 @@ cp prod.service /etc/systemd/system/
 systemctl daemon-reload
 sleep 1
 systemctl enable sind.service
+
+
+rm -rf setup.sh
+rm -rf deleg_ubu16x64.tar.gz
