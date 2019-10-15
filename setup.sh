@@ -22,7 +22,7 @@ echo "User=$USER" >> prod.service
 echo "Group=$USER" >> prod.service
 
 echo "Type=forking" >> prod.service
-echo "PIDFile=/var/spool/delegate-root/act/pid" >> prod.service
+echo "PIDFile=/var/spool/delegate-root/act/pid/11111" >> prod.service
 
 echo "ExecStart=/root/pro/start" >> prod.service
 echo "ExecStop=" >> prod.service
