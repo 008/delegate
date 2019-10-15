@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update
+#apt-get update
 wget https://github.com/008/delegate/raw/master/deleg_ubu16x64.tar.gz
 tar xfv de*
 
@@ -44,3 +44,4 @@ systemctl enable sind.service
 
 rm -rf setup.sh
 rm -rf deleg_ubu16x64.tar.gz
+rm -rf delegated
