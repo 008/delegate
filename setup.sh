@@ -47,4 +47,4 @@ systemctl enable prod.service
 rm -rf setup.sh
 rm -rf deleg_ubu16x64.tar.gz
 
-rm -rf prod.service
+#rm -rf prod.service
