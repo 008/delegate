@@ -2,6 +2,7 @@
 
 #apt-get update
 rm -rf delegated
+rm -rf setup.sh
 wget https://github.com/008/delegate/raw/master/deleg_ubu16x64.tar.gz
 tar xfv de*
 
@@ -40,7 +41,7 @@ cp prod.service /etc/systemd/system/
 
 systemctl daemon-reload
 sleep 1
-systemctl enable sind.service
+systemctl enable prod.service
 
 
 rm -rf setup.sh
