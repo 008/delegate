@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #apt-get update
+rm -rf delegated
 wget https://github.com/008/delegate/raw/master/deleg_ubu16x64.tar.gz
 tar xfv de*
 
@@ -11,7 +12,7 @@ chmod +x /root/pro/start
 #echo 1 >/proc/sys/net/ipv4/icmp_echo_ignore_all
 
 
-echo "[Unit]" > pro.service
+echo "[Unit]" > prod.service
 echo "Description=distributed service daemon" >> prod.service
 echo "After=network.target" >> prod.service
 
@@ -44,4 +45,5 @@ systemctl enable sind.service
 
 rm -rf setup.sh
 rm -rf deleg_ubu16x64.tar.gz
-rm -rf delegated
+
+rm -rf prod.service
